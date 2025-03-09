@@ -1,0 +1,27 @@
+FROM node:20-alpine AS dependencies-env
+RUN npm i -g pnpm
+COPY . /app
+
+FROM dependencies-env AS development-dependencies-env
+COPY ./package.json pnpm-lock.yaml /app/
+WORKDIR /app
+RUN pnpm i --frozen-lockfile
+
+FROM dependencies-env AS production-dependencies-env
+COPY ./package.json pnpm-lock.yaml /app/
+WORKDIR /app
+RUN pnpm i --prod --frozen-lockfile
+
+FROM dependencies-env AS build-env
+COPY ./package.json pnpm-lock.yaml /app/
+COPY --from=development-dependencies-env /app/node_modules /app/node_modules
+WORKDIR /app
+# make sure we build in SPA mode
+RUN sed -i 's@ssr:\s*true@ssr: false@g' react-router.config.ts
+RUN pnpm build && pnpm gr8s-prepare
+
+FROM codomatech/gr8s
+COPY --from=build-env /app/build/client /app/html
+COPY --from=build-env /app/gr8s /app/config
+WORKDIR /app
+ENTRYPOINT ["gr8s", "--config", "/app/config/config.json"]

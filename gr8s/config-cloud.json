@@ -1,0 +1,13 @@
+{
+    "port": 8338,
+    "is_multicore": true,
+    "servers": {
+        "www.example.com": {
+            "is_spa": true,
+            "root_directory": "/app/html",
+            "template_datasource": {
+                "file_path": "https://s3sapi-gr8s.b-cdn.net/site/www.example.com/file/public__ae096f66_datasource.json"
+            }
+        }
+    }
+}

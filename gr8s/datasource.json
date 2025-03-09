@@ -1,0 +1,52 @@
+{
+	"/": {
+		"body_text": "new app home text",
+		"meta_tags": [
+			[
+				"og:title",
+				"New app home page"
+			],
+			[
+				"og:url",
+				"https://www.example.com/"
+			],
+			[
+				"og:description",
+				"A new app"
+			]
+		],
+		"page_title": "new app home page",
+		"canonical_url": "https://www.example.com/",
+		"additional_links": [
+			{
+				"url": "/about",
+				"title": "About page"
+			}
+		]
+	},
+	"/about": {
+		"body_text": "new app about text",
+		"meta_tags": [
+			[
+				"og:title",
+				"New app about page"
+			],
+			[
+				"og:url",
+				"https://www.example.com/about"
+			],
+			[
+				"og:description",
+				"A new app about page"
+			]
+		],
+		"page_title": "new app about page",
+		"canonical_url": "https://www.example.com/about",
+		"additional_links": [
+			{
+				"url": "/",
+				"title": "Home page"
+			}
+		]
+	}
+}

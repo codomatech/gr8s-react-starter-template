@@ -1,0 +1,13 @@
+{
+  "port": 8338,
+  "is_multicore": true,
+  "servers": {
+    "localhost:8338": {
+      "is_spa": true,
+      "root_directory": "/app/html",
+      "template_datasource": {
+        "file_path": "/app/config/datasource.json"
+      }
+    }
+  }
+}
