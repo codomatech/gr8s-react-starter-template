@@ -12,12 +12,20 @@
     "typecheck": "react-router typegen && tsc --build --noEmit"
   },
   "dependencies": {
+    "@eslint/eslintrc": "^3.3.0",
+    "@eslint/js": "^9.22.0",
     "@react-router/node": "^7.3.0",
     "@react-router/serve": "^7.3.0",
+    "esbuild": "^0.25.1",
+    "eslint": "^9.22.0",
+    "eslint-plugin-react": "^7.37.4",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "globals": "^16.0.0",
     "isbot": "^5.1.23",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-router": "^7.3.0"
+    "react-router": "^7.3.0",
+    "typescript-eslint": "^8.26.1"
   },
   "devDependencies": {
     "@codomatech/gr8s-tools": "^0.0.21",
