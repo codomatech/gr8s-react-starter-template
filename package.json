@@ -28,7 +28,7 @@
     "typescript-eslint": "^8.26.1"
   },
   "devDependencies": {
-    "@codomatech/gr8s-tools": "^0.0.21",
+    "@codomatech/gr8s-tools": "^0.0.29",
     "@react-router/dev": "^7.3.0",
     "@types/node": "^20.17.24",
     "@types/react": "^18.3.18",
