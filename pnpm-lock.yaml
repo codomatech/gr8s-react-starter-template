@@ -28,6 +28,8 @@ overrides:
   '@react-router/node@>=7.0.0 <=7.9.3': '>=7.9.4'
   react-router@>=7.0.0 <7.12.0: '>=7.12.0'
   react-router@>=7.0.0 <=7.8.2: '>=7.9.0'
+  lodash@>=4.0.0 <=4.17.22: '>=4.17.23'
+  tar@<7.5.7: '>=7.5.7'
 
 importers:
 
@@ -77,8 +79,8 @@ importers:
         version: 8.52.0(eslint@9.39.2(jiti@1.21.7))(typescript@5.9.3)
     devDependencies:
       '@codomatech/gr8s-tools':
-        specifier: ^0.0.29
-        version: 0.0.29
+        specifier: ^0.0.30
+        version: 0.0.30
       '@react-router/dev':
         specifier: ^7.3.0
         version: 7.12.0(@react-router/serve@7.12.0(react-router@7.12.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(typescript@5.9.3))(@types/node@20.19.27)(jiti@1.21.7)(react-router@7.12.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(terser@5.44.1)(typescript@5.9.3)(vite@7.3.1(@types/node@20.19.27)(jiti@1.21.7)(terser@5.44.1))
@@ -251,8 +253,8 @@ packages:
   '@clack/prompts@0.9.1':
     resolution: {integrity: sha512-JIpyaboYZeWYlyP0H+OoPPxd6nqueG/CmN6ixBiNFsIDHREevjIf0n0Ohh5gr5C8pEDknzgvz+pIJ8dMhzWIeg==}
 
-  '@codomatech/gr8s-tools@0.0.29':
-    resolution: {integrity: sha512-i6jG2SagtwsP0f6hbpyT7SwepBT2+h6JfL5qtniEZLdZ68ICjKXkdxOu0mhLHvVJVwOVTBuljNg6nbOmdwVSfw==}
+  '@codomatech/gr8s-tools@0.0.30':
+    resolution: {integrity: sha512-A4FZFnEsmk4SD4lh/Bt398agTDQeCF5sg1ReMmKsCzCbCO3ZZpsjAPj7bN0HiBC9Bpn+YjK7HYZNYYvQ2VEgnA==}
     hasBin: true
 
   '@esbuild/aix-ppc64@0.25.12':
@@ -1812,8 +1814,8 @@ packages:
   lodash.merge@4.6.2:
     resolution: {integrity: sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==}
 
-  lodash@4.17.21:
-    resolution: {integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==}
+  lodash@4.17.23:
+    resolution: {integrity: sha512-LgVTMpQtIopCi79SJeDiP0TfWi5CNEc/L/aRdTh3yIvmZXTnheWpKjSZhnvMl8iXbC1tFg9gdHHDMLoV7CnG+w==}
 
   loose-envify@1.4.0:
     resolution: {integrity: sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q==}
@@ -2386,8 +2388,8 @@ packages:
     engines: {node: '>=14.0.0'}
     hasBin: true
 
-  tar@7.5.6:
-    resolution: {integrity: sha512-xqUeu2JAIJpXyvskvU3uvQW8PAmHrtXp2KDuMJwQqW8Sqq0CaZBAQ+dKS3RBXVhU4wC5NjAdKrmh84241gO9cA==}
+  tar@7.5.7:
+    resolution: {integrity: sha512-fov56fJiRuThVFXD6o6/Q354S7pnWMJIVlDBYijsTNx6jKSE4pvrDTs6lUnmGvNyfJwFQQwWy3owKz1ucIhveQ==}
     engines: {node: '>=18'}
 
   terser@5.44.1:
@@ -2816,7 +2818,7 @@ snapshots:
       picocolors: 1.1.1
       sisteransi: 1.0.5
 
-  '@codomatech/gr8s-tools@0.0.29':
+  '@codomatech/gr8s-tools@0.0.30':
     dependencies:
       '@clack/prompts': 0.9.1
       chalk: 5.6.2
@@ -2826,7 +2828,7 @@ snapshots:
       htmlparser2: 9.1.0
       postmate: 1.5.2
       sleep-await: 1.0.2
-      tar: 7.5.6
+      tar: 7.5.7
       tmp: 0.2.5
 
   '@esbuild/aix-ppc64@0.25.12':
@@ -3118,7 +3120,7 @@ snapshots:
       exit-hook: 2.2.1
       isbot: 5.1.32
       jsesc: 3.0.2
-      lodash: 4.17.21
+      lodash: 4.17.23
       p-map: 7.0.4
       pathe: 1.1.2
       picocolors: 1.1.1
@@ -4448,7 +4450,7 @@ snapshots:
 
   lodash.merge@4.6.2: {}
 
-  lodash@4.17.21: {}
+  lodash@4.17.23: {}
 
   loose-envify@1.4.0:
     dependencies:
@@ -5100,7 +5102,7 @@ snapshots:
       - tsx
       - yaml
 
-  tar@7.5.6:
+  tar@7.5.7:
     dependencies:
       '@isaacs/fs-minipass': 4.0.1
       chownr: 3.0.0
